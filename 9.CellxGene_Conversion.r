@@ -11,10 +11,10 @@ anndata <- import("anndata")
 tanybase <- readRDS("/data/pharma_macrophages/Tanybase_integrated_080525.rds")
 
 #Get normalized data (data slot)
-norm_mat <- GetAssayData(tanybase, assay = "RNA", slot = "data")
+norm_mat <- GetAssayData(tanybase, assay = "RNA", layer = "data")
 
 #Get raw counts
-raw_mat <- GetAssayData(tanybase, assay = "RNA", slot = "counts")
+raw_mat <- GetAssayData(tanybase, assay = "RNA", layer = "counts")
 
 #Metadata (obs)
 obs <- tanybase@meta.data
@@ -75,10 +75,10 @@ tanybase@meta.data <- tanybase@meta.data %>%
   )
 
 #Get normalized data (data slot)
-norm_mat <- GetAssayData(tanybase, assay = "RNA", slot = "data")
+norm_mat <- GetAssayData(tanybase, assay = "RNA", layer = "data")
 
 #Get raw counts
-raw_mat <- GetAssayData(tanybase, assay = "RNA", slot = "counts")
+raw_mat <- GetAssayData(tanybase, assay = "RNA", layer = "counts")
 
 #Metadata (obs)
 obs <- tanybase@meta.data
