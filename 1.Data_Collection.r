@@ -5,22 +5,15 @@
 #Data obtained from Flippo, Kyle (2022), “Tany-Seq: Integrated Analysis of the Mouse Tanycyte Transcriptome”, Mendeley Data, V1, doi: 10.17632/w8yw2c92jg.1
 #File name: IntegratedTanycyteDataset.rds
 
-library(plyr)
 library(dplyr)
 library(Seurat)
-library(patchwork)
 library(ggplot2)
-library(docopt)
-library(tibble)
-library(tidyr)
 library(stringr)
 library(Matrix)
-library(Seurat)
-library(SeuratDisk)
-library(future)
+
 library(anndata)
 library(cowplot)
-library(patchwork)
+
 
 dir.create("/data/pharma_macrophages/Umit/20250602/", showWarnings = TRUE, recursive = FALSE, mode = "0777")
 setwd("/data/pharma_macrophages/Umit/20250602/")
