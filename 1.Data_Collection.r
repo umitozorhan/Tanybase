@@ -10,7 +10,7 @@ library(Seurat)
 library(ggplot2)
 library(stringr)
 library(Matrix)
-
+library(reticulate)
 library(anndata)
 library(cowplot)
 
