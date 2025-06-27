@@ -14,8 +14,20 @@ Figure 1. UMAP graph of Tanybase database. 1 shows the canonical tanycyte subtyp
 Standard modern computer 16+ GB RAM and 8 Cores with 20 gb space. Runtime depends on RAM and Core speeds. Whole analysis could be done under 1 hour.
   # Software
 Conda environment or R studio. Conda environment packages and requirements were given at Enviromentlist.txt.
-Alternatively R studio with R base 4.4 should work.
-    # Necessary packages
+Alternatively R studio with R base >= 4.4 should work. This work run previously on debian based Linux machine.
+  # Necessary packages
 seurat (5.1.0), stringr (1.5.1), dplyr (1.1.4), matrix(1.7_2), reticulate (1.40.0), anndata (0.11.4), ggplot2 (3.5.1), cowplot (1.1.3).
+1.install.packages("Seurat", version='5.1.0')
+2.install.packages("stringr", version='1.5.1'),  "reticulate", "anndata", "ggplot2", "cowplot"))
+3.install.packages("dplyr", version='1.1.4')
+4.if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_version("Matrix", version = "1.7-2")
+5.install.packages("reticulate", version='1.40.0')
+6.install.packages("anndata", version='0.11.4')
+7.install.packages("ggplot2", version='3.5.1')
+8.install.packages("cowplot", version='1.1.3')
 
+This will take 5-10 minutes depending on internet connection stability and speed. For conda environment that could take up to 30 min because of extra packages attached to the  Enviromentlist.txt.
 
