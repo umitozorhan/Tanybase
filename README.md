@@ -17,8 +17,9 @@ Conda environment or R studio. Conda environment packages and requirements were 
 Alternatively R studio with R base >= 4.4 should work. This work run previously on debian based Linux machine.
   # Necessary packages
 seurat (5.1.0), stringr (1.5.1), dplyr (1.1.4), matrix(1.7_2), reticulate (1.40.0), anndata (0.11.4), ggplot2 (3.5.1), cowplot (1.1.3).
+
 1.install.packages("Seurat", version='5.1.0')
-2.install.packages("stringr", version='1.5.1'),  "reticulate", "anndata", "ggplot2", "cowplot"))
+2.install.packages("stringr", version='1.5.1')
 3.install.packages("dplyr", version='1.1.4')
 4.if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
@@ -30,4 +31,23 @@ remotes::install_version("Matrix", version = "1.7-2")
 8.install.packages("cowplot", version='1.1.3')
 
 This will take 5-10 minutes depending on internet connection stability and speed. For conda environment that could take up to 30 min because of extra packages attached to the  Enviromentlist.txt.
+
+# Data Availability
+# Source Data
+HypoMap Mouse https://www.repository.cam.ac.uk/items/8f9c3683-29fd-44f3-aad5-7acf5e963a75
+Tany-Seq https://data.mendeley.com/datasets/w8yw2c92jg/1
+# Final Data
+özorhan, ümit (2025), “Tanybase - Combined and Curated Tanycyte Database”, Mendeley Data, V2, doi: 10.17632/p6jkzkpdd6.2
+
+# Instructions
+Follow the instruction given at each section. These should reproduce the same or very similar results.
+1.Data_Collection,
+2.Combining_Tany-seq_and_Hypomap,
+3.Unifying_Tany-seq_and_Hypomap,
+4.Tanycyte_Mapping _and_CleanUp,
+5.Integration_of_Tanybase,
+6.Labelling_unlabelled_Tanycytes,
+7.DE_Genes_Calculation_Tanybase,
+8.Plots_for_the_Publication,
+9.CellxGene_Conversion.
 
