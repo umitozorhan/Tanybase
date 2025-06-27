@@ -3,7 +3,7 @@
 # Remove all assays except RNA
 DefaultAssay(tanycyte) <- "RNA"
 assays_to_keep <- "RNA"
-tany_integrated@assays <- tanycyte@assays[names(tanycyte@assays) %in% assays_to_keep]
+tanycyte@assays <- tanycyte@assays[names(tanycyte@assays) %in% assays_to_keep]
 
 #QC filtering and measuring the percentage of mt- and Rps, Rpl genes
 tanycyte[["percent.mt"]] <- PercentageFeatureSet(tanycyte, pattern = "^mt-")
