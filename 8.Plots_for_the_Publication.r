@@ -51,13 +51,13 @@ plot <- DotPlot(
         axis.text.x = element_text(face = 'plain', hjust = 1, vjust = 1),  # x-axis labels in italics
         axis.text.y = element_text(face = 'italic',hjust = 1, vjust = 1), # y-axis labels 
         plot.margin = margin(t = 1, r = 5, b = 1, l = 1), legend.position = "bottom") + 
-  ylab("Transcripts") + 
-  xlab("Tanycyte Subtypes")  # y-axis label
+  ylab("Tanycyte Subtypes") + 
+  xlab("Transcripts")  # y-axis label
 
 # To flip the coordinates
 plot <- plot + coord_flip()  # Flip the axes
 
-ggsave(filename = "SuppFig6a.pdf", height = 8, width = 3, plot = plot)
+ggsave(filename = "SuppFig6a.pdf", height = 8, width = 4, plot = plot)
 
 
 #Plot for the Supplementary Fig 8a.
