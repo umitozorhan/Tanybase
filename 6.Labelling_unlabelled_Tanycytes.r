@@ -66,7 +66,7 @@ ggsave(filename = "Tany_Scores.png",
        height = 15, width = 10, dpi=300, 
        plot = plot_grid(p1, p2, p3, p4,p5, nrow = 3))
 
-#Fig 1C. of Tany-seq paper.    
+#Markers for Tanycyte subtypes.    
 p1 <- DimPlot(tany_integrated, group.by = "label", reduction = "umap", shuffle = TRUE, label = TRUE, raster=FALSE) + ggtitle("Subclusters") + theme(axis.title = element_text(size = 14)) + NoLegend()
 p2 <- DimPlot(tany_integrated, group.by = "seurat_clusters", reduction = "umap", shuffle = TRUE, label = TRUE, raster=FALSE) + ggtitle("Subclusters") + theme(axis.title = element_text(size = 14)) + NoLegend()       
 p3 <- FeaturePlot(tany_integrated, "Mafb", reduction = "umap",  label = FALSE, raster=FALSE) + theme(axis.title = element_text(size = 14)) 
